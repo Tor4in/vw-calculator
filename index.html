@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vw calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wraper">
+		<div class="lable-wraper">
+			<label for="wrap-width">Wraper: <input type="number" name="wrap-width" id="wrap-width"
+					placeholder=".....px"></label>
+			<label for="width">Width: <input type="number" name="width" id="width" placeholder=".....px"></label>
+		</div>
+		<div class="button-waper">
+			<button class="vw-res" onclick="copyPast('.vw-res', 0)">VW</button>
+			<button class="clamp-vw-res" onclick="copyPast('.clamp-vw-res', 1)">Clamp VW</button>
+		</div>
+	</div>
+	</div>
+	<script src="./script-dist.js"></script>
+</body>
+
+</html>

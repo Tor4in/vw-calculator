@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Hedvig Letters Sans', sans-serif; 
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+} 
+.wraper{
+	font-size: 3rem;
+	max-width: 1000px;
+	height: 100vh; 
+	margin: 0 auto;
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.lable-wraper{
+		display: flex;
+		gap: 50px;
+		label{
+			font-size: 2rem;
+			display: flex;
+			gap: 10px;
+			width: 49%;
+			
+			input{
+				flex: 1;
+				border-radius: 8px;
+				border: none;
+				background: rgba(118, 17, 165, 0.404);
+				padding: 10px;
+				color: white;
+				transition: transform 0.2s ease,
+				box-shadow 0.4s ease;
+				&:focus-visible{
+					outline: none;
+				}
+				&:hover{
+					animation: shadow 0.4s ease both;
+					transform: translate(3px, -3px);
+					background: rgba(118, 17, 165, 0.513);
+				}
+				@keyframes shadow {
+					0%{
+						box-shadow: 0 0 0 rgba(118, 17, 165, 0.2);
+					}
+					100%{
+						box-shadow: -2px 2px 10px rgba(118, 17, 165, 0.2);
+					}
+				}
+			}
+		}
+	}
+	.button-waper{
+		button{
+			background: #e54899ed;
+			border: none;
+			border-radius: 8px;
+			padding: 10px 30px;
+			&:first-child{
+				margin-right: 15px;
+			}
+		}
+	}
+}
